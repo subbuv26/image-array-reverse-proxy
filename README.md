@@ -4,12 +4,14 @@ A Reverse Proxy that serves HTTP endpoints for gRPC Server https://github.com/su
 
 # REST API
 
+Add a dummy Bearer token with prefix `Bearer`
+
 ## Get List of Images
 
 ### Request
     GET localhost:8080/images
 
-### Repsonse
+### Response
     < HTTP/2 200
     < content-type: application/json
     < content-length: 116
@@ -34,7 +36,7 @@ A Reverse Proxy that serves HTTP endpoints for gRPC Server https://github.com/su
 ## Get an Image
 ### Request
     GET localhost:8080/images/f2a5e510-ef20-4d60-a68f-b50baffdfae6
-### Repsonse
+### Response
     < HTTP/2 200
     < content-type: application/json
     < content-length: 116
@@ -70,7 +72,7 @@ A Reverse Proxy that serves HTTP endpoints for gRPC Server https://github.com/su
 ## Delete an Image
 ### Request
     DELETE localhost:8080/images/f2a5e510-ef20-4d60-a68f-b50baffdfae6
-### Repsonse
+### Response
     < HTTP/2 200
     < content-type: application/json
     < content-length: 116
