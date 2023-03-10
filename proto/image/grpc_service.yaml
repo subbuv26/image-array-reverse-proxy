@@ -1,0 +1,20 @@
+type: google.api.Service
+config_version: 3
+name: imageapi.internal.dev.jina.ai
+title: Image Array
+http:
+  rules:
+  - selector: image.ImageService.ListImages
+    get: /images
+  - selector: image.ImageService.GetImage
+    get: /images/{id}
+  - selector: image.ImageService.CreateImage
+    post: /images
+    body: Image
+  - selector: image.ImageService.UpdateImage
+    patch: /images/{id}
+    body: Image
+  - selector: image.ImageService.DeleteImage
+    delete: /images/{id}
+apis:
+- name: image.Image
