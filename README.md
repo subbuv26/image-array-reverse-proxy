@@ -82,3 +82,6 @@ Add a dummy Bearer token with prefix `Bearer`
     {
         "success": true
     }
+
+## Note
+-  Please add a dummy `Bearer` token with a random value and prefix `Bearer` on every request
